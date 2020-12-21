@@ -1,0 +1,60 @@
+body{
+	margin: 0;
+}
+
+/*
+style of navigation bar begins
+*/
+.navbar {
+	background: rgb(249, 249, 249);
+  	height: 4rem
+}
+.navbar ul{
+	list-style-type: none;
+	margin: 0 auto;
+	padding: 0;
+
+}
+.navbar > ul{
+	max-width: 900px;
+	padding: 0 2rem;
+	display: flex;
+}
+.navbar > ul > .navbar-item{
+	flex: 1;
+	padding: 0.75rem 0;
+}
+.navbar > ul > .navbar-item:after{
+	content: "";
+	position: absolute;
+	width: 4px;
+	height: 4px;
+	border-radius: 50%;
+	bottom: 5px;
+	left: calc(50% - 2px);
+	background: red;
+	will-change: transform;
+	transform: scale(0);
+	transition: transform 0.2s ease;
+}
+
+.navbar > ul > .navbar-item:hover:after{
+	transform: scale(1.5);
+}
+
+.navbar-item {
+	position: relative;
+	line-height: 2.5rem;
+	text-align: center;
+}
+.navbar-item a {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	display: block;
+	color: #331729;
+	text-decoration: none;
+	font-family: verdana;
+}
+
+/*style of navigation bar ends */
