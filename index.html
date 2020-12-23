@@ -8,19 +8,17 @@
 
 	<!-- Add external sources like styles and js codes -->
 	<link rel="stylesheet" type="text/css" href="stylesheet/main.css">
+
+	<!-- external and reuseable components source file -->
+	<script type="text/javascript" src="components/header.js"></script>
+	<script type="text/javascript" src="components/footer.js"></script>
+
 	<title>Hamid Aebadi</title>
 </head>
 <body>
-	<!-- Navigation bar begins -->
-	<nav class="navbar">
-		<ul>
-			<li class="navbar-item"><a href="index.html">Home</a></li>
-			<li class="navbar-item"><a href="#about">About</a></li>
-			<li class="navbar-item"><a href="#apps">My Apps</a></li>
-			<li class="navbar-item"><a href="#contact">Get in Touch</a></li>
-		</ul>
-	</nav>
-	<!-- navigation bar ends here -->
+	<!-- navigation component -->
+	<header-component></header-component>
+	<!-- navigation component ends here -->
 
 	<!-- Main content of the page begins -->
 	<div class="row">
@@ -31,15 +29,7 @@
 	<!-- Main content ends here-->
 
 	<!-- Footer of the page begins -->
-	<footer class="footer">
-		<div class="footer-contact-section">
-			Contact
-		</div>
-		<div class="footer-copyright-section">
-				&copy;HamiX-2020
-		</div>
-	</footer>
-
+	<footer-component></footer-component>
 	<!-- end of the footer -->
 </body>
 </html>
