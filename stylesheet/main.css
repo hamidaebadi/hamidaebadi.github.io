@@ -71,11 +71,17 @@ style of navigation bar begins
 .column {
 	margin-top: 4rem;
   	padding: 10px;
-  	height: 1200px; /* Should be removed. Only for demonstration */
 }
 
 /* Left and right column */
-.column.side {
+.column.side.right {
+   -webkit-flex: 1;
+   -ms-flex: 1;
+   flex: 1;
+   /*background-color: rgba(200, 200, 200, 0.5);*/
+   margin-right: 100px;
+}
+.column.side.left {
    -webkit-flex: 1;
    -ms-flex: 1;
    flex: 1;
@@ -87,6 +93,14 @@ style of navigation bar begins
   -ms-flex: 2;
   flex: 2;
   padding: 20px;
+}
+.main-title{
+	font-family: papyrus;
+	font-size: 60px;
+}
+.main-text{
+	font-family: Georgia;
+	font-size: 20px;
 }
 
 
