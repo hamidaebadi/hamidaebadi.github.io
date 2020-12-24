@@ -1,7 +1,3 @@
-/* This is a json-based database file
-stored on the web server. Use this file for
-providing content for home page
-*/
 [
 	{
 		"id": 1,
