@@ -9,10 +9,10 @@ class Header extends HTMLElement {
 		`
 		<nav class="navbar">
 			<ul>
-				<li class="navbar-item"><a href="index.html">Home</a></li>
-				<li class="navbar-item"><a href="about.html">About</a></li>
-				<li class="navbar-item"><a href="#apps">My Apps</a></li>
-				<li class="navbar-item"><a href="contact.html">Get in Touch</a></li>
+				<li class="navbar-item"><a href="index.html">Etusivu</a></li>
+				<li class="navbar-item"><a href="about.html">Minusta</a></li>
+				<li class="navbar-item"><a href="#apps">Minun projektit</a></li>
+				<li class="navbar-item"><a href="contact.html">Yhteystiedot</a></li>
 			</ul>
 		</nav>
 		`;
