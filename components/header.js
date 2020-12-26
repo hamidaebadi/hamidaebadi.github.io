@@ -11,8 +11,7 @@ class Header extends HTMLElement {
 			<ul>
 				<li class="navbar-item"><a href="index.html">Etusivu</a></li>
 				<li class="navbar-item"><a href="about.html">Minusta</a></li>
-				<li class="navbar-item"><a href="#apps">Minun projektit</a></li>
-				<li class="navbar-item"><a href="contact.html">Yhteystiedot</a></li>
+				<li class="navbar-item"><a href="myapps.html">Minun projektit</a></li>
 			</ul>
 		</nav>
 		`;

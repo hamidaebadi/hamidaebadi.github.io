@@ -6,11 +6,12 @@ body{
 style of navigation bar begins
 */
 .navbar {
-	background: rgba(220, 220, 220, 0.3);
+	background: rgb(250, 250, 250);
   	height: 4rem;
   	overflow: hidden;
   	top: 0;
   	position: sticky;
+  	border-bottom: 1px groove brown;
 }
 .navbar ul{
 	list-style-type: none;
@@ -64,51 +65,120 @@ style of navigation bar begins
 
 
 /* container style begins*/
-.row {
-  display: -webkit-flex;
-  display: flex;
-}
+
+/* Create three unequal columns that floats next to each other */
 .column {
-	margin-top: 4rem;
-  	padding: 10px;
+  float: left;
+  padding: 10px;
+  
 }
 
 /* Left and right column */
-.column.side.right {
-   -webkit-flex: 1;
-   -ms-flex: 1;
-   flex: 1;
-   /*background-color: rgba(200, 200, 200, 0.5);*/
-   margin-right: 100px;
-}
-.column.side.left {
-   -webkit-flex: 1;
-   -ms-flex: 1;
-   flex: 1;
+.column.side {
+  width: 25%;
+  margin-left: 10%;
+  margin-top: 5%;
 }
 
 /* Middle column */
 .column.middle {
-  -webkit-flex: 2;
-  -ms-flex: 2;
-  flex: 2;
-  padding: 20px;
-}
-.main-title{
-	font-family: papyrus;
-	font-size: 60px;
-}
-.main-text{
-	font-family: Georgia;
-	font-size: 20px;
+  	width: 50%;
+  	margin-top: 5%;
+  	font-family: Georgia;
+  	font-size: 20px;
+
 }
 
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+7/* Comment section style*/
+.contact-us {
+  background: #f8f4e5;
+  padding: 40px 60px;
+}
+
+label, input, textarea {
+  display: block;
+  width: 100%;
+  font-size: 12pt;
+  line-height: 24pt;
+  font-family: "Spartan";
+}
+
+input {
+  margin-bottom: 14pt;
+}
+
+h3 {
+  font-weight: normal;
+  font-size: 10pt;
+  line-height: 24pt;
+  font-style: italic;
+  margin: 0 0 0.5em 0;
+}
+
+
+em {
+  color: #f45702;
+  font-weight: bold;
+}
+
+input, textarea {
+  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  background: #f8f4e5;
+  padding-left: 5px;
+  outline: none;
+}
+
+input:focus, textarea:focus {
+  border: 1px solid #6bd4b1;
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  display: block;
+  float: left;
+  line-height: 24pt;
+  padding: 0 20px;
+  border: none;
+  background: #f45702;
+  color: white;
+  letter-spacing: 1px;
+  
+}
+button:hover {
+  background: inherit;
+  color: #f45702;
+  border-bottom: 2px solid #f45702;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+  border: 1px solid #6bd4b1;
+  -webkit-text-fill-color: #2A293E;
+  -webkit-box-shadow: 0 0 0px 1000px #f8f4e5 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
 
 /*
 	Footer style begins
 */
 .footer {
-	background-color: rgba(220, 220, 220, 0.4);
+	background: rgb(250, 250, 250);
 	padding: 45px 0 20px;
 	font-size: 15px;
 	line-height: 24px;
@@ -117,7 +187,9 @@ style of navigation bar begins
 	position:relative;
    	bottom:0;
    	width:100%;
-   	height:150px
+   	height:150px;
+   	border-top: 1px groove black;
+   	text-align: center;
 }
 
 /* 
